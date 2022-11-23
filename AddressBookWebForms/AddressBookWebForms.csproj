@@ -106,6 +106,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Assets\Images\addnew.png" />
+    <Content Include="Assets\Images\cancel.png" />
+    <Content Include="Assets\Images\delete-button-png-28580 %281%29 %281%29.png" />
+    <Content Include="Assets\Images\Delete.png" />
+    <Content Include="Assets\Images\edit-icon-png-3607 %281%29 %281%29 %281%29.png" />
+    <Content Include="Assets\Images\edit.png" />
+    <Content Include="Assets\Images\Save.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />

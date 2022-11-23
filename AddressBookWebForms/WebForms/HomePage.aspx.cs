@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -17,6 +19,22 @@ namespace AddressBookWebForms.WebForms
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("ContactForm.aspx");
+        }
+
+        static string connectionString = ConfigurationManager.ConnectionStrings["AdressBookConnectionString"].ConnectionString;
+        SqlConnection connection = new SqlConnection(connectionString);
+        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int id = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value.ToString());
+            connection.Open();
+            SqlCommand command = new SqlCommand("delete from AdressDetails where Id='" + id + "'", connection);
+            int t = command.ExecuteNonQuery();
+            if (t > 0)
+            {
+                Response.Write("<script>alert('Data is Deleted')</script>");
+                GridView1.EditIndex = -1;
+                GridView1.DataBind();
+            }
         }
     }
 }
