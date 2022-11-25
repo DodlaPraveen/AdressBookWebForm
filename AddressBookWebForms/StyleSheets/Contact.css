@@ -1,0 +1,28 @@
+﻿body {
+}
+html {
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    background-color: Violet;
+}
+input[type=text] {
+    padding: 6px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.sec2 {
+    background-color: white;
+    margin-left: 300px;
+    margin-right: 340px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    padding-left: 120px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.Header {
+    color: darkblue;
+}

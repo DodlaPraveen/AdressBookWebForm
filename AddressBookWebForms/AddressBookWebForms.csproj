@@ -132,6 +132,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="AdressBook.Master" />
+    <Content Include="StyleSheets\Contact.css" />
+    <Content Include="StyleSheets\HomePage.css" />
     <Content Include="WebForms\ContactForm.aspx" />
     <Content Include="WebForms\HomePage.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
